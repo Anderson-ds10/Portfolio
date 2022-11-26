@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background-color: #19191c;
+    color: #f9f9f9;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    visibility: hidden;
+    transition: translate 0.3s;
+}
+
+.navbar-menu > button {
+    font-size: 18px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.navbar-menu > button > a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-menu > button:hover {
+    transform: scale(1.1);
+    border-bottom: 3px solid #9400FF;
+    transition: 0.3s;
+}
+
+.imgPerfil {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.github-img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6px;
+}
+
+.github-link {
+    text-decoration: none;
+    color:#f9f9f9;
+    font-size: 14px;
+}
+
+.linkedin-img {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+}
+
+.linkedin-link {
+    text-decoration: none;
+    color:#f9f9f9;
+    font-size: 14px;
+}
+
+.github:hover {
+    transform: scale(1.1);
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
+}
+
+body.open .navbar-menu {
+    visibility: visible;
+    translate: 0 0;
+}
+
+@media only screen and (min-width: 872px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 16px;
+    }
+    .navbar-overlay {
+        display: none;
+    }
+    .navbar-burger {
+        display: none;
+    }
+    .navbar-title {
+        font-size: 20px;
+
+    }
+    .navbar-menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+        margin-right: 150px;
+    }
+
+    .navbar-menu > button:hover {
+        color: #f9f9f9;
+        transform: scale(1.1);
+        border-bottom: 3px solid #9400FF;
+        transition: 0.3s;
+    }
+
+    .imgPerfil {
+        display: none;
+    }
+
+    .github-img {
+        display: none;
+    }
+    
+    .github-link {
+        display: none;
+    }
+
+    .linkedin-img {
+        display: none;
+    }
+    
+    .linkedin-link {
+        display: none;
+    }
+    
+    .navbar-menu > button {
+        color: rgba(255, 255, 255, 0.5);
+        background: transparent;
+        padding: 0 8px;
+        margin-right: 50px;
+        transition: 0.3s;
+    }
+
+    .navbar-menu > button.active {
+        color: inherit;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .navbar-title {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 930px) {
+    .navbar-menu {
+        margin-right: 100px;
+    }
+}

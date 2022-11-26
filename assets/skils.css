@@ -1,0 +1,116 @@
+.skils {
+    display: flex;
+    width: 100%;
+    height: 620px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.skils-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.skils-card--html, .skils-card--css, .skils-card--js, .skils-card--git, .skils-card--github, .skils-card--bootstrap, .skils-card--sass {
+    display: flex;
+    flex-direction: column;
+    background-color: #19191c;
+    width: 200px;
+    height: 200px;
+    box-shadow: 1px 1px 10px -1px #9400ff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skils-card--title {
+    color: white;
+    font-family: 'poppins';
+    margin: 5px 0px 0px 0px;
+}
+
+.skils-card--html:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--css:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--js:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--git:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--github:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--bootstrap:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+.skils-card--sass:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+
+.skils-card--link-html {
+    width: 90px;
+    height: 110px;
+}
+
+.skils-card--link-css {
+    width: 120px;
+    height: 120px;
+    margin-bottom: -5px;
+}
+
+.skils-card--link-js {
+    width: 90px;
+    height: 110px;
+}
+
+.skils-card--link-git {
+    width: 110px;
+    height: 110px;
+}
+
+.skils-card--link-github {
+    width: 130px;
+    height: 130px;
+}
+
+.skils-card--link-bootstrap {
+    width: 130px;
+    height: 130px;
+}
+
+.skils-card--link-sass {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .sobre-card > p {
+        margin-top: 150px;
+    }
+}
