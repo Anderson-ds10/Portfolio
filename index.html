@@ -208,12 +208,13 @@
                         <h2 class="formcontato__title">Contato</h2>
                         <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                         <h3 class="formcontato__subtext">Preencha o formulário abaixo e entrarei em contato o mais rápido possível. </h3>
-                        <form class="formcontato__form">
-                            <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required>
-                            <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
-                            <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                        <form class="formcontato__form" action="https://formsubmit.co/andersonkpla@hotmail.com" method="POST">
+                            <input class="formcontato__input" type="text" id="nome" name="nome" placeholder="Nome" required>
+                            <input class="formcontato__input" type="email" id="email" name="email" placeholder="Email" required onblur="validaEmail()" onfocus="redefiniMSG()">
+                            <span class="erro"></span>
+                            <input class="formcontato__input" type="text" id="assunto" name="assunto" placeholder="Assunto">
                             <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Escreva aqui sua mensagem..." required></textarea>
-                            <button class="formcontato__botao">Enviar mensagem</button>
+                            <button class="formcontato__botao" type="submit">Enviar mensagem</button>
                         </form>
                     </div>
                 </div>
@@ -235,5 +236,6 @@
             const toggleMenuOpen = () => document.body.classList.toggle("open")
         </script>
         <script src="formacao-efeito.js"></script>
+        <script src="validacao-form.js"></script>
     </body>
 </html>

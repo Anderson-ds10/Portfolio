@@ -46,6 +46,10 @@
     font-size: 28px;
 }
 
+#nome {
+    margin-bottom: 10px;
+}
+
 .formcontato__subtext {
     color: white;
     font-size: 16px;
@@ -84,6 +88,12 @@
 .formcontato__botao:hover {
     transition: 0.3s;
     transform: scale(1.2);
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    margin: 0px;
 }
 
 @media only screen and (max-width: 1200px) {
