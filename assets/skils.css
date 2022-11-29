@@ -109,8 +109,20 @@
     margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 600px) {
-    .sobre-card > p {
-        margin-top: 150px;
+@media only screen and (max-width: 1270px) {
+    .skils {
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .skils {
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .skils {
+        height: auto;
     }
 }

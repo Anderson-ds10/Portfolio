@@ -80,3 +80,20 @@ html {
         margin-top: 470px;
     }
 }
+
+@media only screen and (max-width: 560px) {
+    .sobre-card {
+        height: 700px;
+    }
+    .sobre {
+        height: 750px;
+    }
+
+    .bordaBaixo {
+        display: none;
+    }
+
+    .bordaCima {
+        display: none;
+    }
+}
