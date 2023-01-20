@@ -151,7 +151,7 @@ body.open .navbar-menu {
     translate: 0 0;
 }
 
-@media only screen and (min-width: 1270px) {
+@media only screen and (min-width: 872px) {
     .navbar {
         justify-content: space-between;
         padding: 0 0 0 16px;
@@ -173,6 +173,7 @@ body.open .navbar-menu {
         background: transparent;
         flex-direction: row;
         visibility: visible;
+        margin-right: 150px;
     }
 
     .navbar-menu > button:hover {

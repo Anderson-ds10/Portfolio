@@ -55,30 +55,3 @@
     height: 200px;
     border-radius: 20px;
 }
-
-@media only screen and (max-width: 1180px) {
-    .projetos {
-        height: auto;
-    }
-    
-    .projeto-jogo {
-        flex-direction: column;
-        margin-bottom: 30px;
-        margin-top: 50px;
-    }
-    .projeto-jogo-img{
-        margin: 0px;
-        width: auto;
-    }
-    .projeto-jogo-buttons {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 620px) {
-    .img-jogo {
-        width: 300px;
-        height: 150px;
-    }
-   
-}

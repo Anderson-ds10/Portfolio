@@ -130,14 +130,3 @@
     transform: scale(2.0);
     transition: 0.5s;
 }
-
-@media only screen and (max-width: 1180px) {
-    .formacao {
-        height: auto;
-    }
-
-    .informativo {
-        width: auto;
-        height: auto;
-    }
-}
